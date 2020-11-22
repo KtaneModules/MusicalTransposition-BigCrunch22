@@ -307,7 +307,7 @@ public class TranspositionScript : MonoBehaviour
 			yield return null;
 			if (parameters.Length != 6)
 			{
-				yield return "Invalid parameter length. The command was not processed.";
+				yield return "sendtochaterror Invalid parameter length. The command was not processed.";
 				yield break;
 			}
 			
@@ -315,7 +315,7 @@ public class TranspositionScript : MonoBehaviour
 			{
 				if (!parameters[x].EqualsAny(NoteTerms))
 				{
-					yield return "One or more key being submitted is not valid. The command was not processed.";
+					yield return "sendtochaterror One or more key being submitted is not valid. The command was not processed.";
 					yield break;
 				}
 			}
