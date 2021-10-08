@@ -261,6 +261,8 @@ public class TranspositionScript : MonoBehaviour
 				if (Input[x] != CorrectAnswers[x])
 				{
 					Module.HandleStrike();
+					Input = new int[] {-1, -1, -1, -1, -1, -1};
+					Keyboard = 0;
 					return;
 				}
 			}
